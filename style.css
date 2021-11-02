@@ -156,23 +156,37 @@ ________________________
 }
 
 .item {
+    
     height: 150px;
     width: 150px;
 }
 
 .item1{
+   
     background-color: rgb(255, 190, 225);
+    position:sticky;
+    top: 50px;
+    left: 50px;
 }
 
 .item2{
-    background-color: rgb(131, 204, 233)
+    background-color: rgb(131, 204, 233)    
 }
+
 
 /*
 ________________________
 Units
+
 ________________________
 */
+
+.box__vw {
+    width: 50vw;
+}
+.box__vh {
+    height: 20vh;
+}
 .box__container {
     height: auto;
     margin: 10px;
@@ -191,11 +205,36 @@ ________________________
     font-size: 25px;
 }
 
+.font__1em {
+    font-size: 1em;
+}
+.font__1rem {
+    font-size: 1rem;
+}
+.font__100percent {
+    font-size: 100%;
+}
+.font__2em {
+    font-size: 2em;
+}
+.font__2rem {
+    font-size: 2rem;
+}
+.font__200percent {
+    font-size: 200%;
+}
 
 /*
 ________________________
 Flex
 ________________________
+*/
+
+/*
+display: flex;
+flex-flow:column-reverse wrap-reverse;
+align-content:space-between;
+justify-content:center;
 */
 .flex__container {
     display: flex;
@@ -215,12 +254,26 @@ ________________________
     background-color: var(--primary-100);
 }
 /* Extra small devices (phones, 600px and down) */
-
+@media screen and (min-width:600px) {
+    .media__container{
+        height: 20vh;
+        width: 90vw;
+        margin-bottom: 50px;
+        background-color: var(--primary-900);
+    }
+}
 
 
 /* Small devices (portrait tablets and large phones, 600px and up) */
 
-
+@media screen and (min-width:600px) {
+    .media__container{
+        height: 20vh;
+        width: 90vw;
+        margin-bottom: 50px;
+        background-color: var(--primary-700);
+    }
+}
 
 /* Medium devices (landscape tablets, 768px and up) */
 
